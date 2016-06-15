@@ -5,26 +5,21 @@ Define Object schema and test or validate target object.
 **Important:** Only support ECMAScript 6, both node engine and browsers.
 
 
-## Getting Started 
-
-Currently, duck-type can support both NodeJS and browser:
-
-
-### Test & Validate: 
-
-
 #### Example: Basic
 
 ```JavaScript
 
     def(String).match(123);   // return false
     def(String).match('123'); // return true
+ 
     def(String).validate(123); // throw IncompatibleTypeError if not match
+    def(String).validate('123'); // passed with silence
 
 ```
 
 `def` define a new `Schema` object. Use `match` to test type of target object, use `validate` to assert target object.
 
+`validate` is as same as `match` except it will throw exception if not match. 
 
 #### Example: Object
 
