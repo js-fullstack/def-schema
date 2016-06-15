@@ -4,6 +4,21 @@ Define Object schema and test or validate target object.
 
 **Important:** Only support ECMAScript 6, both node engine and browsers.
 
+#### Install
+
+``` Bash
+  npm install def-schema
+
+```
+
+**and**
+
+```JavaScript
+
+let def = require('def-schema');
+
+```
+
 
 #### Example: Basic
 
